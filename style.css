@@ -23,6 +23,10 @@ body {
   text-align: center;
   width: 360px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  .title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .search-box {
@@ -32,19 +36,54 @@ body {
 }
 
 #cityInput {
+  width: 70%;
   padding: 10px;
   border: none;
   border-radius: 10px 0 0 10px;
   outline: none;
-  width: 70%;
+  font-size: 1rem;
 }
 
 #searchBtn {
-  border: none;
   padding: 10px 15px;
+  border: none;
   border-radius: 0 10px 10px 0;
-  cursor: pointer;
   background-color: #fff;
   color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
+#searchBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.weather-info img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+#temperature {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+#description {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+#error {
+  color: #ffdfdf;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
